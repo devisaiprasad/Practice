@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -118,6 +118,26 @@
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.company.app.testsuites.App" hash-for-method="print">print</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.company.app.testsuites.App" hash-for-method="testMethodFour">testMethodFour</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.company.app.testsuites.App" hash-for-method="testMethodOne">testMethodOne</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.company.app.testsuites.App" hash-for-method="testMethodThree">testMethodThree</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.company.app.testsuites.App" hash-for-method="testMethodTwo">testMethodTwo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -142,7 +162,7 @@
                   </a> <!-- print1 -->
                   <span class="method-name">print1</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at com.company.app.testsuites.App.print1(App.java:21)
+	at com.company.app.testsuites.App.print1(App.java:39)
 ... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -160,6 +180,34 @@
                   <a name="print">
                   </a> <!-- print -->
                   <span class="method-name">print</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMethodFour">
+                  </a> <!-- testMethodFour -->
+                  <span class="method-name">testMethodFour</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMethodOne">
+                  </a> <!-- testMethodOne -->
+                  <span class="method-name">testMethodOne</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMethodThree">
+                  </a> <!-- testMethodThree -->
+                  <span class="method-name">testMethodThree</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMethodTwo">
+                  </a> <!-- testMethodTwo -->
+                  <span class="method-name">testMethodTwo</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -219,20 +267,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'print')
 data.setCell(0, 2, 'com.company.app.testsuites.App')
-data.setCell(0, 3, 157);
+data.setCell(0, 3, 17);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'print1')
 data.setCell(1, 2, 'com.company.app.testsuites.App')
-data.setCell(1, 3, 0);
+data.setCell(1, 3, 4);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testMethodOne')
+data.setCell(2, 2, 'com.company.app.testsuites.App')
+data.setCell(2, 3, 2);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testMethodFour')
+data.setCell(3, 2, 'com.company.app.testsuites.App')
+data.setCell(3, 3, 2);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testMethodThree')
+data.setCell(4, 2, 'com.company.app.testsuites.App')
+data.setCell(4, 3, 1);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testMethodTwo')
+data.setCell(5, 2, 'com.company.app.testsuites.App')
+data.setCell(5, 3, 1);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 157 ms</span>
+              <span class="suite-total-time">Total running time: 27 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -267,7 +331,23 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">print1</span>
-                <span class="method-start">188 ms</span>
+                <span class="method-start">19 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMethodFour</span>
+                <span class="method-start">30 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMethodOne</span>
+                <span class="method-start">32 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMethodThree</span>
+                <span class="method-start">38 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMethodTwo</span>
+                <span class="method-start">40 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
